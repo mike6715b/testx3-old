@@ -1,0 +1,63 @@
+Action/Variable list:
+
+Action:
+
+//Teacher/Admin
+examcreate
+contrlexam
+selfcheck
+
+classadd
+classlist
+
+studadd
+studlist
+
+subjadd
+subjlist
+
+fieldadd
+fieldquesadd
+fieldqueslist
+
+
+//Student
+examstart
+examreslist
+
+
+SQL Tables
+
+Tests
+	test_id KEY
+	test_name
+	test_field
+	test_class
+	test_type
+
+testsdone
+	test_id KEY
+	test_name
+	test_grade
+	test_date
+	test_user
+
+users
+	user_id KEY
+	user_first
+	user_last
+	user_mail
+	user_uid
+	user_pwd
+	user_role
+	user_class
+
+subject
+	subj_id KEY
+	subj_name
+	subj_author
+
+fielda
+	field_id KEY
+	field_name
+	field_subj
